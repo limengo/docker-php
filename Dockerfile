@@ -2,7 +2,7 @@ FROM php:7-fpm-alpine
 
 ENV PS1 '\u@\h:\w\$ '
 
-RUN apk --no-cache add --upgrade icu-libs \
+RUN apk --no-cache add --upgrade icu-libs libpq \
     && apk add --no-cache --virtual .phpize-deps $PHPIZE_DEPS icu-dev curl-dev postgresql-dev \
     && docker-php-ext-install \
         pdo pdo_mysql pdo_pgsql \
