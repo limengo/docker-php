@@ -1,4 +1,4 @@
-FROM php:8-fpm-alpine
+FROM php:8.0.4-fpm-alpine
 
 ENV PS1 '\u@\h:\w\$ '
 
