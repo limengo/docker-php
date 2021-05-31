@@ -30,7 +30,7 @@ if [ ! -f /lock-install ]; then
 
         echo Installation Outils
         apk add --no-cache vim curl wget bash bash-completion git
-        wget http://cs.sensiolabs.org/download/php-cs-fixer-v2.phar -O /usr/local/bin/php-cs-fixer
+        wget http://cs.symfony.org/download/php-cs-fixer-v2.phar -O /usr/local/bin/php-cs-fixer
         chmod +x /usr/local/bin/php-cs-fixer
 
         echo Configuration Git
